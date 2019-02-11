@@ -4,6 +4,7 @@ local scaleX = 0.01
 local gridSize = 1
 
 
+-- TODO: Should we be normalising this as opposed to relying on 0.5^o to set the max value?
 function Perlin1D:setPoints(xoff, numOctaves)
     for x = 0, self.numPoints do
         self.points[x] = 0

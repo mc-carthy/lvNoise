@@ -1,7 +1,9 @@
 Perlin1D = require('src.perlin1d')
+Perlin2D = require('src.perlin2d')
 
 function love.load()
-    scene = Perlin1D:new{ octaves = 3 }
+    -- scene = Perlin1D:new{ octaves = 3 }
+    scene = Perlin2D:new()
 end
 
 function love.update(dt)
